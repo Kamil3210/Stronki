@@ -1,0 +1,159 @@
+body {
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  border-bottom: 1px solid lightgrey;
+  height: 80px;
+}
+
+.start {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.start button {
+  background-color: white;
+  border: none;
+  height: 20px;
+  position: relative;
+  top: 7px;
+  font-size: 20px;
+}
+.start .logo i {
+  color: red;
+  position: relative;
+  left: 30px;
+  bottom: 20px;
+}
+.start .logo .name {
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  left: 80px;
+  bottom: 45px;
+  width: 400px;
+}
+.start .logo .pl {
+  font-weight: lighter;
+  font-size: 10px;
+  position: relative;
+  left: 170px;
+  bottom: 70px;
+  width: 20px;
+}
+
+.center {
+  text-align: center;
+  position: relative;
+  bottom: 80px;
+}
+.center input {
+  width: 500px;
+  height: 30px;
+}
+.center button {
+  height: 35px;
+  width: 35px;
+  border: 1px solid gray;
+  background-color: white;
+  position: relative;
+  right: 4px;
+}
+
+.end {
+  position: relative;
+  left: 85%;
+  bottom: 120px;
+  word-spacing: 20px;
+  width: 200px;
+}
+.end button {
+  background-color: white;
+  border: none;
+  font-size: 20px;
+}
+.end .login {
+  border: 1px solid blue;
+  color: blue;
+  display: flex;
+  position: relative;
+  left: 80px;
+  bottom: 25px;
+}
+
+#main-section {
+  position: relative;
+  left: 400px;
+  bottom: 1100px;
+  width: 900px;
+}
+#main-section .buttons .active {
+  background-color: black;
+  color: white;
+}
+#main-section .buttons button {
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid gray;
+}
+
+#left-section .link-group {
+  border: 1px solid lightgrey;
+}
+#left-section .login-info {
+  width: 300px;
+  margin-left: 20px;
+}
+#left-section .login-info .login {
+  border: 1px solid blue;
+  background-color: white;
+  color: blue;
+  width: 140px;
+}
+
+#body {
+  line-height: 40px;
+}
+
+.main-movie-section {
+  padding: 10px 10px;
+  background-color: #f8f8f8;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+  width: 1050px;
+  border-bottom: 2px solid lightgray;
+}
+.main-movie-section .movie {
+  height: 250px;
+}
+
+.movie-info {
+  position: relative;
+  left: 60px;
+  bottom: 50px;
+  width: 140px;
+  line-height: 20px;
+}
+.movie-info .info {
+  color: gray;
+  font-size: 10px;
+}
+
+.movie-frame {
+  height: 100px;
+  width: 200px;
+  background-color: lightblue;
+}
+
+.avatar {
+  padding: 20px 20px;
+  border: 1px solid lightgray;
+  width: 10px;
+  border-radius: 100%;
+  height: 10px;
+  margin-top: 10px;
+  background-color: lightgrey;
+}/*# sourceMappingURL=zad_02.css.map */
