@@ -1,0 +1,172 @@
+@import "./variables\(2\)";
+
+body { 
+    font-family: BlinkMacSystemFont, Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+
+}
+header {
+    display: flex;
+    gap: 550px;
+    justify-content: center;
+    height: 50px;
+    background-color: #fb6100;
+     align-items: center;
+    .logo{
+        color: white;
+        font-size: 20px;
+    }
+    .logo span:nth-child(1) {
+        font-weight: bold;
+    }
+    .address {
+        text-decoration: underline;
+        color: white;
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+    button {
+        border: none;
+        background-color: #fb6100;
+        color: white;
+        font-size: 25px;
+    }
+}
+.type-section {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: #f8f5f2;
+    border-bottom: 1px solid lightgray;
+    .buttons {
+        align-content: center;
+        display: flex;
+        gap: 100px;
+    }
+    .button-1.active {
+        border: none;
+        background-color: #f8f5f2;
+    }
+    .button-1.active:hover {
+        color: #fb6100;
+        border-bottom: 2px solid #fb6100;
+    }
+    .button-2 {
+        border: none;
+        background-color: #f8f5f2;
+    }
+}
+.category-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 50px;
+    button {
+        border: none;
+        background-color: white;
+        align-self: center;
+        &:nth-child(12) {
+            color: #fb6100;
+        }
+        
+    }
+    .active:hover {
+        background-color: #fb6100;
+        border-radius: 20px;
+        color: white;
+    }
+}
+.main-section {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .left-main-section {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .header {
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .stars {
+            color: lightgray;
+        }
+    }
+    .right-main-section {
+        width: 650px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .search {
+            input {
+                width: 600px;
+                height: 25px;
+            }
+            button {
+                height: 30px;
+                width: 30px;
+                border: none;
+                background-color: white;
+            }
+        }
+        .header {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .pic {
+            width: 200px;
+            height: 100px;
+            background-color: antiquewhite;
+        }
+        .logo {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            position: relative;
+            right: 40px;
+            top: 15px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fb6100;
+            transform: rotate(-30deg);
+            font-weight: bold;
+            font-size: 13px;
+        }
+        .description {
+            margin-bottom: 20px;
+            font-weight: lighter;
+        }
+        .item {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border: 1px solid lightgray;
+            height: 100px;
+        }
+        .info {
+            font-weight: lighter;
+            .content {
+                display: flex;
+                gap: 20px;
+                div {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+            .header {
+                color: grey;
+            }
+        }
+    }
+    .star {
+        i {
+            color: #fb6100;
+        }
+    }
+    
+}

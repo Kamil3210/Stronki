@@ -1,0 +1,255 @@
+@import "./variables";
+
+body {
+  background-color: $background-color;
+  color: $white;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 0.875em;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  gap: 70%;
+  height: 40px;
+  box-shadow: $box-shadow;
+  .prawo {
+    display: flex;
+    gap: 10%;
+    flex-direction: row;
+    width: 100%;
+    div {
+      display: flex;
+      align-self: center;
+      border-radius: 5px;
+      background-color: $white;
+      color: #333333;
+      width: 90px;
+      justify-content: center;
+      font-weight: bold;
+    }
+    .zaloz:hover {
+      color: $white;
+      background-color: $orange;
+    }
+    .zaloguj:hover {
+      color: $white;
+      background-color: $orange;
+    }
+    }
+  .lewo {
+    margin-left: 2%;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-self: center;
+    .jeden {
+      color: $logo-1;
+    }
+    .dwa {
+      color: $logo-2;
+    }
+  }
+}
+section.main {
+  height: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  gap: 40px;
+  box-shadow: $box-shadow;
+  .obserwujacy {
+    display: flex;
+    flex-direction: column;
+    &:nth-of-type(1) {
+      text-align: center;
+    }
+  }
+  .obserwowani {
+    display: flex;
+    flex-direction: column;
+    &:nth-of-type(2) {
+      text-align: center;
+    }
+  }
+  .wpisy {
+    display: flex;
+    flex-direction: column;
+    &:nth-of-type(3) {
+      text-align: center;
+    }
+  }
+}
+.main-section {
+  display: flex;
+  .left-section {
+    margin-left: 10%;
+    margin-top: 5%;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    .data {
+      width: 70px;
+      height: 70px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1%;
+      background-color: $dark-gray;
+      border-radius: 5px;
+
+    }
+    .like {
+      width: 70px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 70px;
+      background-color: $dark-gray;
+      border-radius: 5px;
+      grid-row: 2;
+    }
+    .strzalka1 {
+      font-size: 40px;
+      color: gray;
+      grid-row: 4/6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: $dark-gray;
+      border-radius: 5px;
+    }
+    .strzalka2 {
+      font-size: 40px;
+      color: gray;
+      grid-column: 10;
+      grid-row: 4/6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: $dark-gray;
+      border-radius: 5px;
+    }
+    .photo {
+      grid-column: 2/10;
+      grid-row: 1/7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: lightgray;
+    }
+  }
+  .right-section {
+    height: 350px;
+    width: 300px;
+    background-color: $dark-gray;
+    margin-top: 5%;
+    margin-left: 5%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    .fota {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      background-color: lightgray;
+      margin-top: 20px;
+    }
+    .obs {
+      width: 280px;
+      display: flex;
+      justify-content: center;
+      color: black;
+      background-color: white;
+      border-radius: 3px;
+      gap: 10px;
+      i {
+        display: flex;
+        align-self: center;
+      }
+    }
+    .imie {
+      display: flex;
+      gap: 10px;
+      width: 280px;
+    }
+    .miasto {
+      display: flex;
+      gap: 10px;
+      width: 280px;
+    }
+    .info {
+      width: 280px;
+      display: flex;
+      justify-content: center;
+      color: black;
+      background-color: white;
+      border-radius: 3px;
+    }
+    .wiadomosc {
+      width: 280px;
+      display: flex;
+      justify-content: center;
+      color: black;
+      background-color: white;
+      border-radius: 3px;
+    }
+    .obs:hover {
+      color: $white;
+      background-color: $orange;
+    }
+    .info:hover {
+      color: $white;
+      background-color: $orange;
+    }
+    .wiadomosc:hover {
+      color: $white;
+      background-color: $orange;
+    }
+  }
+}
+footer {
+  display: flex;
+  margin-left: 50%;
+  font-size: 10px;
+  gap: 10px;
+  div {
+    &:nth-of-type(2) {
+      font-weight: bold;
+    }
+  }
+
+}
+
+
+// Przycisk jasny (np. zaloguj się)
+
+// Kolor tekstu: #333333
+// Kolor tła: $white
+// Obramowanie: brak
+// Zaokrąglenie krawędzi: niewielkie
+
+// Przycisk pomarańczowy (np. załóż konto)
+
+// Kolor tekstu: $white
+// Kolor tła: $orange
+// Obramowanie: brak
+// Zaokrąglenie krawędzi: niewielkie
+
+// Przyciski poprzedniego i następnego zdjęcia
+
+// Kolor tekstu: rgba(211, 211, 211, 0.541)
+// Kolor tła: $dark-gray

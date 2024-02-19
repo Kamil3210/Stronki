@@ -1,0 +1,167 @@
+body {
+  font-family: BlinkMacSystemFont, Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  gap: 550px;
+  justify-content: center;
+  height: 50px;
+  background-color: #fb6100;
+  align-items: center;
+}
+header .logo {
+  color: white;
+  font-size: 20px;
+}
+header .logo span:nth-child(1) {
+  font-weight: bold;
+}
+header .address {
+  text-decoration: underline;
+  color: white;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+header button {
+  border: none;
+  background-color: #fb6100;
+  color: white;
+  font-size: 25px;
+}
+
+.type-section {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: #f8f5f2;
+  border-bottom: 1px solid lightgray;
+}
+.type-section .buttons {
+  align-content: center;
+  display: flex;
+  gap: 100px;
+}
+.type-section .button-1.active {
+  border: none;
+  background-color: #f8f5f2;
+}
+.type-section .button-1.active:hover {
+  color: #fb6100;
+  border-bottom: 2px solid #fb6100;
+}
+.type-section .button-2 {
+  border: none;
+  background-color: #f8f5f2;
+}
+
+.category-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 50px;
+}
+.category-section button {
+  border: none;
+  background-color: white;
+  align-self: center;
+}
+.category-section button:nth-child(12) {
+  color: #fb6100;
+}
+.category-section .active:hover {
+  background-color: #fb6100;
+  border-radius: 20px;
+  color: white;
+}
+
+.main-section {
+  margin-left: 15%;
+  margin-right: 15%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.main-section .left-main-section {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-section .left-main-section .header {
+  font-size: 15px;
+  font-weight: bold;
+}
+.main-section .left-main-section .stars {
+  color: lightgray;
+}
+.main-section .right-main-section {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-section .right-main-section .search input {
+  width: 600px;
+  height: 25px;
+}
+.main-section .right-main-section .search button {
+  height: 30px;
+  width: 30px;
+  border: none;
+  background-color: white;
+}
+.main-section .right-main-section .header {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.main-section .right-main-section .pic {
+  width: 200px;
+  height: 100px;
+  background-color: antiquewhite;
+}
+.main-section .right-main-section .logo {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  position: relative;
+  right: 40px;
+  top: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fb6100;
+  transform: rotate(-30deg);
+  font-weight: bold;
+  font-size: 13px;
+}
+.main-section .right-main-section .description {
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+.main-section .right-main-section .item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  height: 100px;
+}
+.main-section .right-main-section .info {
+  font-weight: lighter;
+}
+.main-section .right-main-section .info .content {
+  display: flex;
+  gap: 20px;
+}
+.main-section .right-main-section .info .content div {
+  display: flex;
+  flex-direction: row;
+}
+.main-section .right-main-section .info .header {
+  color: grey;
+}
+.main-section .star i {
+  color: #fb6100;
+}/*# sourceMappingURL=pyszne.css.map */
